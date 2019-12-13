@@ -34,7 +34,7 @@ Below are sample results we obtained:
 
 <br />
 
-You may also want to play with some of the parameters. An interesting one would be `lambda`, which balances the data term and the smooth term.
+You may also want to play with some of the parameters. An interesting one would be `lmbd`, which balances the data term and the smooth term.
 
 Hope you enjoy it!
 

@@ -5,7 +5,7 @@ We give an example by using it to optimize a MRF for binary image segmentation.
 
 We follow [“GrabCut” — Interactive Foreground Extraction using Iterated Graph Cuts](https://cvg.ethz.ch/teaching/cvl/2012/grabcut-siggraph04.pdf) to build the workflow. The energy function to be optimized follows [“GrabCut” — Interactive Foreground Extraction using Iterated Graph Cuts](https://cvg.ethz.ch/teaching/cvl/2012/grabcut-siggraph04.pdf) and [A Comparative Study of Energy Minimization Methods for Markov Random Fields with Smoothness-Based Priors](https://www.cs.cornell.edu/~rdz/Papers/SZSVKATR-PAMI08.pdf). When the smooth term is not modeled by a Potts model as we do, one may wants also consider implementing the distance transform proposed in this paper for further performance improvent (we haven't implemented it here at this moment): [Efficient Belief Propagation for Early Vision](http://cs.brown.edu/people/pfelzens/papers/bp-cvpr.pdf).
 
-Currently the code onlys works step by step. One may expect further improvement through parellel programming.
+Currently the code only works step by step. One may expect further improvement through parellel programming.
 
 To play with it, simply clone the repository to your local machine:
 ```

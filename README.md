@@ -24,6 +24,14 @@ of `{sample_name}_seg.png` in the same directory. Also, a segmentation visualiza
 on purely Bayes inference will be saved in the name of `{sample_name}_bayes.png`. 3 testing
 samples are provided.
 
+Below are sample results we obtained:
+
+<div style="color:#0000FF" align="center">
+<img src="flower.png" width="430"/> <img src="flower_seg.png" width="430"/>
+<img src="person.png" width="430"/> <img src="person_seg.png" width="430"/>
+<img src="sponge.png" width="430"/> <img src="sponge_seg.png" width="430"/>
+</div>
+
 You may also want to play with some of the parameters. An interesting one would be `lambda`, which balances the data term and the smooth term.
 
 Hope you enjoy it!

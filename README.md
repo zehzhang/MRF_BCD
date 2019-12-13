@@ -32,7 +32,7 @@ Below are sample results we obtained:
 <img src="sponge.png" width="430"/> <img src="sponge_seg.png" width="430"/>
 </div>
 
- 
+\
 
 You may also want to play with some of the parameters. An interesting one would be `lambda`, which balances the data term and the smooth term.
 

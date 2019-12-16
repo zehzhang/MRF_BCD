@@ -1,6 +1,18 @@
 # MRF_BCD
 This repository contains a Python implementation of the block gradient decent algorithm (BCD) proposed in [Fast MRF Optimization with Application to Depth Reconstruction](http://vladlen.info/papers/fast-mrf.pdf) for Markov Random Field (MRF) optimization.
 
+If you find any part of this repository useful, consider citing it by:
+```
+@article{zehuamrfbcd,
+    Author = {Zehua Zhang},
+    Title = {A Python Implementation of Block Gradient Decent for Optimizing Markov Random Fields},
+    Journal = {https://github.com/zehzhang/MRF_BCD},
+    Year = {2019}
+}
+```
+
+If any other materials mentioned here also helps, please do cite them as well! Thanks!
+
 We give an example by using it to optimize a MRF for binary image segmentation.
 
 We follow [“GrabCut” — Interactive Foreground Extraction using Iterated Graph Cuts](https://cvg.ethz.ch/teaching/cvl/2012/grabcut-siggraph04.pdf) to build the workflow. The energy function to be optimized follows [“GrabCut” — Interactive Foreground Extraction using Iterated Graph Cuts](https://cvg.ethz.ch/teaching/cvl/2012/grabcut-siggraph04.pdf) and [A Comparative Study of Energy Minimization Methods for Markov Random Fields with Smoothness-Based Priors](https://www.cs.cornell.edu/~rdz/Papers/SZSVKATR-PAMI08.pdf). When the smooth term is not modeled by a Potts model as we do, one may wants to consider implementing the distance transform proposed in this paper for performance improvement (we haven't implemented it here at this moment): [Efficient Belief Propagation for Early Vision](http://cs.brown.edu/people/pfelzens/papers/bp-cvpr.pdf).
@@ -37,15 +49,3 @@ Below are sample results we obtained:
 You may also want to play with some of the parameters. An interesting one would be `lmbd`, which balances the data term and the smooth term.
 
 Hope you enjoy it!
-
-If you find any part of this repository useful, consider citing it by:
-```
-@article{zehuamrfbcd,
-    Author = {Zehua Zhang},
-    Title = {A Python Implementation of Block Gradient Decent for Optimizing Markov Random Fields},
-    Journal = {https://github.com/zehzhang/MRF_BCD},
-    Year = {2019}
-}
-```
-
-If any other materials mentioned here also helps, please do cite them as well! Thanks!
